@@ -1,0 +1,776 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+
+body{
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* ___________________________________ Navigation bar ____________________________________________________________*/
+nav{
+    width: 100%;
+    height: 90px;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0px 0px 3px rgb(71, 71, 71);
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: black;
+}
+nav li{
+    margin: 10px;
+    margin-top: 40px;
+    list-style-type: none;
+}
+
+nav i{
+    font-size: 50px;
+    visibility: hidden;
+    position: absolute;
+    margin: 5px;
+    margin-left: 40px;
+}
+
+
+
+
+
+@media only screen and (max-width:980px)
+{
+    nav ul{
+        visibility: hidden;
+    }
+    nav i{
+        visibility: visible;
+    }
+    nav:hover ul{
+        flex-direction: column;
+        visibility: visible;
+        width: 300px;
+        margin-left: 10px;
+        border-radius: 20px;
+        border-bottom:2px solid white;
+        border-left: 2px solid white;
+        border-right: 2px solid white;
+    }
+    nav:hover i{
+        visibility: hidden;
+    }
+   
+}
+
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 1px 1px 1px red;
+}
+nav a:hover{
+    color: red;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+
+/* _____________________________________________End Navigation___________________________________________________________ */
+
+/* ____________________________________________________Cover _________________________________________________________________*/
+.main{
+    margin-top: .5px;
+    background-image: url('./pxfuel\ \(1\).jpg');
+    background-size: cover;
+    height: 900px;
+    position: relative;
+    /* max-width: 1300px; */
+}
+.cover-content{
+    /* background-color: red; */
+    width: 500px;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+}
+.main h1{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 70px;
+    color: white;
+    font-weight: 600;
+}
+
+.main p{
+    color: aqua;
+}
+.main img{
+    margin-left:190px;
+    margin-top: -200px;
+}
+.main span{
+    color: green;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+
+
+@media only screen and (max-width:1300px)
+{
+   .main{
+    background-image: url('https://wallpapercave.com/wp/iJpWQ3v.jpg');
+   }
+
+}
+@media only screen and (max-width:858px)
+{
+    .main{
+        background-size: none;
+    }
+    .cover-content
+    {
+        left: 55%;
+    }
+}
+
+/* ___________________________________________________End Cover ___________________________________________________________ */
+
+
+
+
+
+/* align for heading */
+
+.heading{
+    margin-bottom: 30px;
+    margin-top: 300px;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+.abt{
+    margin-top: 100px;
+}
+
+
+
+
+/* align for heading */
+
+#about{
+    margin-top:0px;
+}
+
+
+
+/*__________________________________________________ About ______________________________________________________________________*/
+
+
+
+
+
+
+
+.abt-fix{
+    padding: 10px;
+    width: 900px;
+    margin: auto;
+}
+.abt_h{
+    background-color:grey;
+    width: 894px;
+    height: 30px;
+    position: relative;
+}
+.headingx{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+}
+
+.about{
+    display: flex;
+    flex-direction: row;
+}
+.abt_h{
+    color: white;
+}
+.pic{
+    background-color:white;
+    border: 5px;
+    width: 300px;
+}
+.pic img{
+    width: 300px;
+}
+.brief{
+    background-color: brown;
+    width: 594px;
+}
+
+.brief p{
+    color: white;
+    text-align:justify;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+
+
+
+
+/* __________________________________________________about________________________________________________________________ */
+
+
+
+/*_______________________________________________ programs_____________________________________________________________________ */
+
+.programs{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    overflow-x: scroll;
+    width: 90%;
+}
+
+.programs:hover{
+    cursor: pointer;
+}
+
+.programs::-webkit-scrollbar{
+    display: none;
+    
+}
+.item{
+    margin-left: 20px;
+}
+
+.item h5{
+    text-align: center;
+    font-size: 20px;
+}
+
+.item:hover h5{
+    color: red;
+}
+
+
+.programs img{
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/*_______________________________________________ programs_____________________________________________________________________ */
+
+
+
+/* _________________________________________________________________Awards___________________________________________________________ */
+.award-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background-color: brown; */
+}
+.award img{
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.award img:hover{
+    width: 410px;
+    height: 260px;
+    /* transform: scale(.5.5); */
+    cursor: pointer;
+    
+}
+.apic{
+    background-color:black;
+    width: 400px;
+    height: 300px;
+    margin: 10px;
+
+}
+.apic h4{
+        color: black;
+        text-align: justify;
+    }
+
+.apic:hover h4{
+    color: white;
+    text-align: justify;
+}
+    
+.award img{
+    width: 400px;
+    height: 250px;
+}
+.apic i{
+    background-color: brown;
+    margin-left: 300px;
+}
+
+.apic a{
+    text-decoration: none;
+}
+
+
+
+
+/*________________________________________________________ project ___________________________________________________________*/
+
+.prj{
+    background-color: none;
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+ }
+
+.box{
+    width: 370px;
+    height: 600px;
+    border: 2px ridge black;
+    margin: 20px;
+    background: linear-gradient(to top,black 50%,rgb(43, 37, 37) 50%);
+    background-size: 100% 200%;
+    transition: all 0.8s;
+    margin-bottom:70px ;
+}
+.box:hover{
+    cursor: pointer;
+    border:5px;
+    border-color: white;
+    box-shadow: 3px 3px 2px white;
+    background-position: left bottom;
+}
+.box img{
+    width: 250px;
+    height: 150px;
+    margin:20px 60px;
+    
+}
+.box h1{
+    color: white;
+    text-align: center;
+    font-weight: 600;
+}
+.box p{
+    margin: 10px;
+    color: white;
+    text-align: justify;
+}
+
+/*___________________________________________________________ project end____________________________________________________________________ */
+
+
+/*___________________________________________________________ Achievemets___________________________________________________________ */
+
+
+
+.achv{
+    margin: auto;
+    width: 50rem;
+    height: 60rem;
+
+    border: 5px solid;
+    border-color: white;
+}
+.achv .aimg{
+    max-width: 500px;
+    max-height: 400px;
+    margin:20px auto;
+    padding: 10px;
+}
+.achv img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px white;
+    object-fit: cover;
+    
+}
+
+.achv h5{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+} 
+.achv p{
+    color: white;
+    margin:20px;
+    text-align: justify;
+}  
+
+/*___________________________________________________________ Achievemets___________________________________________________________ */
+
+
+
+
+
+
+
+
+/* Contact Section Start */
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+    padding: 20px 10px;
+}
+.contact img{
+    width: 100%;
+}
+.contact-text{
+    margin-bottom: 10px;
+}
+.contact-text h2{
+    color: #f4f5fb;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.contact-text h2 span{
+    text-shadow: 0px 1px 1px blanchedalmond;
+}
+.contact-text p{
+    font-weight: bold;
+    color: #f4f5fb;
+}
+.list{
+    margin-top: 16px;
+}
+.list li{
+    margin-bottom: 12px;
+}
+.list li a{
+    display: block;
+    color: #f4f5fb;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.5s ease;
+}
+.contact-form form{
+    position: relative;
+}
+.contact-form form input,
+form textarea{
+    width: 100%;
+    padding: 10px;
+    background: #f4f5fb;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.contact-form textarea{
+    resize: none;
+    height: 160px;
+}
+.contact-form .submit{
+    display: inline-block;
+    font-size: 15px;
+    background: #f4f5fb;
+    color: black;
+    width: 160px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.contact-form .submit:hover{
+    width: 175px;
+}
+@media (max-width:920px){
+    .contact{
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+}
+/* Contact Section End */
+
+
+/* ______________________________________________responsive_______________________________________________ */
+
+
+/* cover */
+.main h1{
+    font-size: 5vh;
+}
+
+/* end cover */
+
+
+
+@media only screen and (max-width:484px)
+{
+    .cover-content
+    {
+        left:70%
+    }
+}
+
+
+
+
+
+
+/*_______________________ responsive (about, achievement)________________________________ */
+
+@media only screen and (max-width:928px)
+{
+    .main h1{
+        font-size: 50px;
+    }
+    /* _____________________about __________________________*/
+    .about{
+        flex-direction: column;
+    }
+    .abt-fix{
+        width: 95%;
+    }
+    .abt_h{
+        width: 100%;
+    }
+    .pic{
+        width: 100%;
+        background-color: white;
+    }
+    .brief{
+        width: 100%;
+    }
+    /* ________________________about end________________________ */
+
+    /* __________________achievements_______________________ */
+
+    
+    .achv{
+        width: 95%;
+        height: auto;
+       
+    }
+
+    /* __________________end achievements_______________________ */
+
+
+
+}
+
+
+
+/*_______________________End responsive________________________________ */
+
+
+
+
+
+/* Footer */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+.hero {
+  height: auto;
+  background: url("https://images.unsplash.com/photo-1444080748397-f442aa95c3e5?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D")
+    left bottom no-repeat;
+  background-color: rgba(0, 0, 0, 0.747);
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: rgb(255, 255, 255);
+  padding: 30px 80px 30px 30px;
+}
+.hero .container{
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex: 1;
+}
+.flex{
+  display: flex;
+}
+container-pages{
+    display: flex;
+    justify-content: flex-end;
+}
+.container__about{
+  margin-bottom: 30px;
+}
+
+footer .container__about p{
+  margin-top: 10px;
+  max-width: 300px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+}
+
+.container-pages{
+  column-gap: 30px;
+}
+
+.container-pages ul{
+  padding-top: 10px;
+  list-style: none;
+  line-height: 24px;
+}
+.container-pages ul a{
+  color: inherit;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+}
+.container-pages ul a:hover{
+  color: #017143;
+}
+footer .by{
+margin-top: 30px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer .by p{
+  color: rgba(255, 255, 255, 0.605);
+  font-size: 14px;
+}
+.line__separete{
+  margin-top: 30px;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  z-index: 999;
+}
+.icons {
+  margin-top: 20px;
+  display: flex;
+  column-gap: 25px;
+  
+}
+
+.icon1 {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 50%;
+  outline: 2px solid #fff;
+  transition-property:
+      outline-offset, outline-color,
+      background-color;
+  transition-duration: .25s;
+}
+
+.icon1:hover {
+  outline-offset: 4px;
+}
+
+.icon1:hover i {
+  animation: shake .25s;
+}
+
+.icon--instagram:hover {
+  background-image: radial-gradient(circle at 30% 107%,
+          #fdf497 0%, #fdf497 5%,
+          #fd5949 45%, #d6249f 60%,
+          #285AEB 90%);
+  outline-color: #a02d76;
+}
+
+.icon--twitter:hover {
+  background-color: #1da1f2;
+  outline-color: #1da1f2;
+}
+
+.icon--linkedin:hover {
+  background-color: #0077b5;
+  outline-color: #0077b5;
+}
+
+.icon--github:hover {
+  background-color: #000000;
+  outline-color: #000000;
+}
+
+@keyframes shake {
+  10% {
+      transform: rotate(15deg);
+  }
+
+  20% {
+      transform: rotate(-15deg);
+  }
+
+  30% {
+      transform: rotate(15deg);
+  }
+
+  40% {
+      transform: rotate(-15deg);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .hero{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container__about h2{
+    font-size: 20px;
+  }
+  .container__about p{
+    font-size: 12px;
+  }
+  .container__recentpages h2{
+    font-size: 20px;
+  }
+  .container-pages ul a{
+    font-size: 12px;
+  }
+  footer .by p{
+    font-size: 12px;
+  }
+} 
+/* Footer ENd */
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
